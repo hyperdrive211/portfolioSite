@@ -1,7 +1,7 @@
 body{
     margin: 0; 
     padding: 0; 
-    background: lightgray; 
+    background: white; 
 }
 
 #main-Container{
@@ -9,31 +9,56 @@ body{
     margin: 20px auto 0px auto; 
 }
 
-header, section{
-    background: white;
+header, section, nav{
+    background:black;
     border-radius: 20px; 
 }
 
 header{
     width: 100%; 
-    margin: auto;
+    margin: 20px auto;
     text-align: right; 
     display: flex; 
     flex-direction: row; 
 }
 
+nav{
+    display: flex; 
+    justify-content: flex-end;
+}
+
+nav ul {
+    width: 60%;
+    display: flex; 
+    justify-content: space-evenly; 
+}
+
+nav ul li {
+    color: white; 
+    display: inline-block; 
+    list-style: none; 
+    font-size: 2vw; 
+    font-family: 'Bevan', cursive;
+}
+
+#img-Container {
+    width: 40%; 
+}
+
 #img-Container img {
     display: block; 
-    width: 80%;
+    width: 50%;
+    height: auto;
     margin: 10px auto;
     background: inherit;
+    border-radius: 50%; 
 
 }
 
 #header-Container {
 display: flex; 
 flex-direction: column;
-align-items:  flex-end; 
+align-items:  center; 
 justify-content: center;
 flex-grow: 3;
 flex-wrap: nowrap;
@@ -50,11 +75,24 @@ border-radius: 10px;
     font-size: 5vw; 
     padding-bottom: 10px; 
     font-family: 'Bevan', cursive;
+    text-align: center; 
+    text-decoration: underline;
+    text-decoration-color: red; 
 }
 
 #header-Container h3{
     font-size: 2vw; 
     font-family: 'Oxygen', sans-serif;
+}
+
+#name-Container{
+    width: 90%; 
+}
+
+#name-underline{
+    height: 20px; 
+    width: 100%; 
+    color: red; 
 }
 
 
