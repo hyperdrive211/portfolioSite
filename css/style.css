@@ -1,12 +1,17 @@
-*{
+body{
     margin: 0; 
     padding: 0; 
+    background: lightgray; 
 }
 
 #main-Container{
-    background-color: lightgray; 
     width: 95%; 
     margin: 20px auto 0px auto; 
+}
+
+header, section{
+    background: white;
+    border-radius: 20px; 
 }
 
 header{
@@ -15,13 +20,14 @@ header{
     text-align: right; 
     display: flex; 
     flex-direction: row; 
-
 }
 
-#img-Container img{
+#img-Container img {
     display: block; 
     width: 80%;
-    margin: auto;
+    margin: 10px auto;
+    background: inherit;
+
 }
 
 #header-Container {
@@ -32,15 +38,22 @@ justify-content: center;
 flex-grow: 3;
 flex-wrap: nowrap;
 margin-right: 3%; 
+color: lavender;
+border-radius: 10px; 
+}
+
+#header-Container h1, #header-Container h3{
+  margin: 0; 
 }
 
 #header-Container h1{
-    font-size: 6vw; 
+    font-size: 5vw; 
     padding-bottom: 10px; 
+    font-family: 'Bevan', cursive;
 }
 
 #header-Container h3{
     font-size: 2vw; 
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Oxygen', sans-serif;
 }
 
