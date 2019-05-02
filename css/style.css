@@ -3,8 +3,44 @@
     padding: 0; 
 }
 
-header{
-    width: 90%; 
-    margin: auto;
-    text-align: center; 
+#main-Container{
+    background-color: lightgray; 
+    width: 95%; 
+    margin: 20px auto 0px auto; 
 }
+
+header{
+    width: 100%; 
+    margin: auto;
+    text-align: right; 
+    display: flex; 
+    flex-direction: row; 
+
+}
+
+#img-Container img{
+    display: block; 
+    width: 80%;
+    margin: auto;
+}
+
+#header-Container {
+display: flex; 
+flex-direction: column;
+align-items:  flex-end; 
+justify-content: center;
+flex-grow: 3;
+flex-wrap: nowrap;
+margin-right: 3%; 
+}
+
+#header-Container h1{
+    font-size: 6vw; 
+    padding-bottom: 10px; 
+}
+
+#header-Container h3{
+    font-size: 2vw; 
+    font-family: 'Courier New', Courier, monospace;
+}
+
